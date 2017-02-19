@@ -14,5 +14,11 @@ public class two_operators {
 
         byte d = 42;
         System.out.println(~d + 1); //-42
+        String test = "Fuck";
+
+        String.format(test);
+
+        byte e = 50;
+        byte f = 50;
     }
 }
