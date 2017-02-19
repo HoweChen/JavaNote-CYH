@@ -3,7 +3,7 @@ package com.company;
 /**
  * Created by howechen on 2/16/17.
  */
-public class one_array {
+public class array {
     public static void main(String[] args) {
         int[][][] threeD = new int[3][4][5];
         System.out.println(threeD.length);

@@ -3,7 +3,7 @@ package com.company;
 /**
  * Created by howechen on 2/17/17.
  */
-public class two_operators {
+public class operators {
     public static void main(String[] args) {
         int a = 5 / 2;
         System.out.println(a); //2
