@@ -10,8 +10,12 @@ class Box {
     double depth;
     double vol;
 
-    public void calculateVol() {
+    void calculateVol() {
         this.vol = this.depth * this.width * this.height;
+    }
+
+    void volume() {
+        System.out.println("Volume: " + this.vol);
     }
 }
 
@@ -26,14 +30,16 @@ public class classKeyword {
 
 
         myBox.calculateVol();
-        System.out.println(String.valueOf(myBox.vol)); //3000.0
-
+//        System.out.println(String.valueOf(myBox.vol)); //3000.0
+        myBox.volume();
 
         //myBox and myBox2 would be pointed to the same object instance
         Box myBox2 = myBox;
         myBox2.vol = 0;
-        System.out.println(String.valueOf(myBox2.vol)); //0.0
-        System.out.println(String.valueOf(myBox.vol)); //0.0
+        myBox.volume();
+        myBox2.volume();
+//        System.out.println(String.valueOf(myBox2.vol)); //0.0
+//        System.out.println(String.valueOf(myBox.vol)); //0.0
 
 
     }
