@@ -13,8 +13,9 @@ class Overloaded {
         System.out.println("One parameter");
     }
 
-    void test(int oneP, int twoP) {
+    void test(double oneP, double twoP) {
         System.out.println("Two parameters");
+        System.out.println(oneP + " + " + twoP);
     }
 
     //test with double type not void
