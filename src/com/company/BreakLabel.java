@@ -3,7 +3,7 @@ package com.company;
 /**
  * Created by howechen on 2/20/17.
  */
-public class breakLabel {
+public class BreakLabel {
     public static void main(String[] args){
         boolean t = true;
         first:{

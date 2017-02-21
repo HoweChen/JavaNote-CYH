@@ -85,7 +85,7 @@ class Stack {
 
 }
 
-public class classKeyword {
+public class ClassKeyword {
 
 
     public static void main(String[] args) {
@@ -128,7 +128,7 @@ class BoxDemo2 {
     }
 }
 
-class stackDemo {
+class StackDemo {
     public static void main(String[] args) {
         System.out.println("Stack Test Demo");
 

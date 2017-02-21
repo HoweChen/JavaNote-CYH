@@ -3,7 +3,7 @@ package com.company;
 /**
  * Created by howechen on 2/20/17.
  */
-public class forLoop {
+public class ForLoop {
     public static void main(String[] args) {
         int[][] twoD = new int[3][5];
 

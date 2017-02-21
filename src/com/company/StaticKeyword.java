@@ -15,7 +15,7 @@ class StaticDemo {
     }
 }
 
-public class staticKeyword {
+public class StaticKeyword {
 
     static int a = 3;
     static int b;
