@@ -34,6 +34,12 @@ class Box {
     public void volume() {
         System.out.println("Volume: " + this.vol);
     }
+
+    public Box increaseByTen() {
+        Box newBox = new Box(this.width + 10, this.height + 10, this.depth + 10);
+        System.out.println(newBox.width);
+        return newBox;
+    }
 }
 
 class Stack {
@@ -111,6 +117,8 @@ public class classKeyword {
         // but this parameter is a reference to an object, so that it would change the object if you modify the parameter.
         // which means: value and object as parameter is value-calling, but object is a reference-calling.
 
+        Box myBox4 = myBox3.increaseByTen();
+        myBox4.volume(); // 15_000
     }
 }
 
