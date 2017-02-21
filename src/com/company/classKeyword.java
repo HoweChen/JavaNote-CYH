@@ -19,6 +19,12 @@ class Box {
         this.calculateVol();
     }
 
+    public Box(Box box) {
+        this.width = box.width;
+        this.height = box.height;
+        this.depth = box.depth;
+    }
+
     public void calculateVol() {
         this.vol = this.depth * this.width * this.height;
     }
@@ -93,6 +99,10 @@ public class classKeyword {
 //        System.out.println(String.valueOf(myBox2.vol)); //0.0
 //        System.out.println(String.valueOf(myBox.vol)); //0.0
 
+
+        //create a new box as a copy of myBox, deep copy
+        Box myBox3 = new Box(myBox);
+        myBox3.volume(); // 0.0
 
     }
 }
