@@ -23,6 +23,8 @@ class Box {
         this.width = box.width;
         this.height = box.height;
         this.depth = box.depth;
+
+        box.vol += 10_000;
     }
 
     public void calculateVol() {
@@ -103,6 +105,8 @@ public class classKeyword {
         //create a new box as a copy of myBox, deep copy
         Box myBox3 = new Box(myBox);
         myBox3.volume(); // 0.0
+        myBox.volume();
+        //10_000 because calling an Object as parameter is a reference, so modifying that reference would affect the object
 
     }
 }
