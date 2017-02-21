@@ -105,8 +105,11 @@ public class classKeyword {
         //create a new box as a copy of myBox, deep copy
         Box myBox3 = new Box(myBox);
         myBox3.volume(); // 0.0
-        myBox.volume();
-        //10_000 because calling an Object as parameter is a reference, so modifying that reference would affect the object
+        myBox.volume();//10_000 because
+        // create an object of a class is a reference calling, calling one object as parameter is still a value-calling
+        // operation.
+        // but this parameter is a reference to an object, so that it would change the object if you modify the parameter.
+        // which means: value and object as parameter is value-calling, but object is a reference-calling.
 
     }
 }
