@@ -4,7 +4,7 @@ package com.company;
  * Created by howechen on 2/21/17.
  */
 
-class Overloaded {
+class Overload {
     void test() {
         System.out.println("No parameter");
     }
@@ -26,11 +26,11 @@ class Overloaded {
 
 }
 
-public class methodOverloaded {
+public class methodOverload {
     public static void main(String[] args) {
         System.out.println("Hello World");
 
-        Overloaded demo = new Overloaded();
+        Overload demo = new Overload();
         demo.test();
         demo.test(0);
         demo.test(0, 0);
