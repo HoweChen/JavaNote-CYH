@@ -43,8 +43,8 @@ class Box {
 }
 
 class Stack {
-    int[] stack;
-    int flag;
+    private int[] stack;
+    private int flag;
 
     public Stack(int size) {
         if (size <= 0) {
