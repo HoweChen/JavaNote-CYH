@@ -17,9 +17,12 @@ class Overloaded {
         System.out.println("Two parameters");
     }
 
-    void test(int oneP, int twoP, int threeP) {
+    //test with double type not void
+    double test(int oneP, int twoP, int threeP) {
         System.out.println("Three parameters");
+        return oneP + twoP + threeP;
     }
+
 }
 
 public class methodOverloaded {
