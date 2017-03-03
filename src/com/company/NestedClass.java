@@ -7,10 +7,11 @@ package com.company;
 public class NestedClass {
     int outer_x = 100;
 
-    void test(){
+    void test() {
         Inner inner = new Inner();
         inner.display();
     }
+
     class Inner {
         void display() {
             System.out.println("Inner Display: outer_x: " + outer_x);
@@ -18,6 +19,7 @@ public class NestedClass {
     }
 
     public static void main(String[] args) {
-        NestedClass
+        NestedClass nestedClass = new NestedClass();
+        nestedClass.test();
     }
 }
