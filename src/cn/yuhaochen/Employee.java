@@ -8,7 +8,7 @@ public class Employee {
     String designation;
     double salary;
 
-    // Employee 类的构造器
+    // employee 类的构造器
     public Employee(String name) {
         this.name = name;
     }
