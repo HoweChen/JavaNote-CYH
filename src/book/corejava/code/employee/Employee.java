@@ -3,7 +3,7 @@ package book.corejava.code.employee;
 import java.time.LocalDate;
 
 public class Employee {
-    private String name;
+    private final String name;
     private Double salary;
     private LocalDate hireDay;
 
@@ -13,15 +13,12 @@ public class Employee {
         this.hireDay = LocalDate.of(year, month, day);
     }
 
-    public String getName() {
+    String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
-    public Double getSalary() {
+    Double getSalary() {
         return salary;
     }
 
@@ -29,15 +26,15 @@ public class Employee {
         this.salary = salary;
     }
 
-    public LocalDate getHireDay() {
-        return hireDay;
+    LocalDate getHireDay() {
+        return (LocalDate) hireDay;
     }
 
     public void setHireDay(LocalDate hireDay) {
         this.hireDay = hireDay;
     }
 
-    public void raiseSalary(double byPercent) {
+    void raiseSalary(double byPercent) {
         double raise = salary * byPercent / 100;
         salary += raise;
     }
