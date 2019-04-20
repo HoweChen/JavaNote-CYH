@@ -124,13 +124,13 @@ public class ClassKeyword {
 
 class BoxDemo2 {
     public static void main(String[] args) {
-        System.out.println("Test");
+        System.out.println("Point");
     }
 }
 
 class StackDemo {
     public static void main(String[] args) {
-        System.out.println("Stack Test Demo");
+        System.out.println("Stack Point Demo");
 
         Stack stackTest = new Stack(5);
         stackTest.show_stack();
